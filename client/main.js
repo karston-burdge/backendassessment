@@ -1,7 +1,7 @@
 const fortuneButton = document.getElementById("fortuneButton");
 
 const getFortune = () => {
-    axios.get("http://localhost:4000/api/fortune/")
+    axios.get("http://localhost:6000/api/fortune/")
         .then(res => {
             const fortune = res.data
             alert(fortune);
@@ -17,7 +17,7 @@ fortuneButton.addEventListener("click", getFortune);
 const complimentBtn = document.getElementById("complimentButton")
 
 const getCompliment = () => {
-    axios.get("http://localhost:4000/api/compliment/")
+    axios.get("http://localhost:6000/api/compliment/")
         .then(res => {
             const data = res.data;
             alert(data);
@@ -33,7 +33,7 @@ complimentBtn.addEventListener('click', getCompliment)
 const deleteCompBtn = document.getElementById("deleteCompBtn")
 
 const deleteComp = () => {
-    axios.delete("http://localhost:4000/api/compliment/")
+    axios.delete("http://localhost:6000/api/compliment/")
         .then(alert("Compliment deleted!"))
         .catch(err => console.log(err))
 };
@@ -47,7 +47,7 @@ deleteCompBtn.addEventListener('click', deleteComp)
 const newComplimentForm = document.querySelector('#newCompliment')
 
 const createCompliment = (body) => {
-    axios.post("http://localhost:4000/api/compliment/", body)
+    axios.post("http://localhost:6000/api/compliment/", body)
         .then(alert("compliment added"))
         .catch(err => console.log(err))
 }
@@ -70,7 +70,7 @@ newComplimentForm.addEventListener("submit", compSubHandler);
 const updateComplimentForm = document.querySelector('#updateCompliment')
 
 const updateCompliment = (body) => {
-    axios.put("http://localhost:4000/api/compliment/:id", body)
+    axios.put("http://localhost:6000/api/compliment/:id", body)
         .then(alert("Random compliment updated"))
         .catch(err => console.log(err))
 }
