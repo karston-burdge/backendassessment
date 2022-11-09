@@ -1,0 +1,43 @@
+* {
+    background-color: rgb(170, 170, 170) ;
+    }
+    
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.compliments {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+
+.button {
+    background-color: rgb(192, 21, 21);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px 5px;
+    margin: 15px;
+}
+
+.fortune {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+}
+
+
+.button:hover {
+    background-color: rgb(234, 10, 10);
+    color: whitesmoke;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px 5px;
+    margin: 15px;
+}
